@@ -1,0 +1,15 @@
+input:visited{
+background-color: blue;
+}
+body{
+    background-color: black;
+    /* opacity: 0.5; */
+}
+h1{
+    color: white;
+}
+#prompt{
+    color: Red;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <p>
+    I'm thinking of number from 1 to 10. What is it?
+  </p>
+  
+  <input type="text" id="guess" value="">
+  <input type="button" value="Guess" onclick="numberGuess()">
+    <p id="prompt"></p>
+  <script>
+      function numberGuess(){
+          var rand = Math.floor((Math.random() * 10) + 1);
+          var guess = document.getElementById("guess");
+
+          if (guess.value == rand){
+              document.getElementById("prompt").innerHTML = "Right";
+          } else {
+            document.getElementById("prompt").innerHTML = "Wrong";
+              
+          }
+      }
+  </script>
+</body>
+</html>
